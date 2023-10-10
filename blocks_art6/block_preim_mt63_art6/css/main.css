@@ -1,0 +1,128 @@
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-600.woff2") format("woff2"), url("../fonts/montserrat-v26-cyrillic_latin-600.woff") format("woff"), url("../fonts/montserrat-v26-cyrillic_latin-600.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v36-cyrillic_latin-600.woff2") format("woff2"), url("../fonts/open-sans-v36-cyrillic_latin-600.woff") format("woff"), url("../fonts/open-sans-v36-cyrillic_latin-600.ttf") format("truetype");
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.preim-mt63 {
+  min-width: 320px;
+  margin: 32px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.preim-mt63__container {
+  max-width: 1032px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.preim-mt63__title {
+  margin: 0;
+  margin-bottom: 48px;
+  font-family: "Open Sans", sans-serif;
+  color: #78a4be;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.preim-mt63__wrapper {
+  position: relative;
+  padding: 0 5px 38px;
+}
+@media (max-width: 1023px) {
+  .preim-mt63__wrapper {
+    padding: 0 0 38px;
+  }
+}
+
+.preim-mt63__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(478px, 1fr));
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 36px;
+}
+@media (max-width: 1023px) {
+  .preim-mt63__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.preim-mt63__group {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+@media (max-width: 1023px) {
+  .preim-mt63__group {
+    flex-wrap: wrap;
+  }
+}
+
+.preim-mt63__item {
+  width: 220px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.preim-mt63__icon {
+  height: 70px;
+  margin: 0 auto 19px;
+  background-color: #fff;
+}
+.preim-mt63__icon:nth-child(1), .preim-mt63__icon:nth-child(4) {
+  width: 101px;
+}
+.preim-mt63__icon:nth-child(2), .preim-mt63__icon:nth-child(3) {
+  width: 90px;
+}
+.preim-mt63__icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.preim-mt63__text {
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.preim-mt63__border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 35px);
+  z-index: -1;
+  border: 3px solid #78a4be;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preim-mt63__line {
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 3px;
+  background-color: #78a4be;
+}
